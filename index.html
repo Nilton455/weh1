@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--permiten al navegador mostrar las páginas web que no cumplen con los estándares como si corrieran en versiones anteriores de IE-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--para especificar el color de la barra de dirreciones del navegador movil-->
+    <meta name="theme-color" content="">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <!--Para conseguir que al abrir la web esta se vea sin ningún marco del navegador en pantalla-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--modificar mínimamente la barra de estado de Apple en la parte superior en tono traslucido-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- meta etiquetas para el seo-->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Nilton master">
+    <title>Biembenidos a Nilton-Master</title>
+    <meta name="author" content="itmilenial">
+    <meta name = "author" content = "itmilenial, dev.Nilton master">
+    <Meta name = "rating" content = "General">
+
+      <link rel="stylesheet" href="estiloserie.css">
+      <link rel="stylesheet" href="font.css">
+  <link rel="stylesheet" type="text/css" href="hosting/css/responsivo.css" media="none" onload='if(media!="all")media="all"'>
+	<link rel="stylesheet" type="text/css" href="hosting/css/estilos.css" media="none" onload='if(media!="all")media="all"'>
+
+      
+
+	<link rel="stylesheet" type="text/css" href="libreria-N-Master/nilton-master-ajax-cloufare-tw-boot.css">
+	<link rel="stylesheet" type="text/css" href="libreria-N-Master/nilton-master-dat-tabl.min.css">
+	<script type="text/javascript" src="libreria-N-Master/nilton-master-src-jqr.js"></script>
+	<script type="text/javascript" src="libreria-N-Master/nilton-master-dat-tab.min.js"></script>
+  <script type="text/javascript" src="libreria-N-Master/nilton-master-dat-tab-javas.js"></script>
+<script src="libreria-N-Master/nilton-master-bundle.min.js" ></script>
+  <style type="text/css">
+   #dt.dataTable.no-footer{
+      border-bottom: unset;
+      background-color:  rgb(54, 55, 56);
+    }
+    #dt tbody td {
+        display: block;
+        border: unset;
+    }
+    #dt>tbody>tr>td{
+      border-top: unset;
+    }
+    .dataTables_wrapper 
+     div.dataTables_wrapper 
+         div.dataTables_filter select {
+     color: white;
+     background-color: red;
+}
+#dt_filter{
+  color: #fff;
+}
+
+.odd{
+  color: #fff;
+}
+
+.card{
+  color: rgb(0, 0, 0);
+}
+
+#ads{
+  display: flex;
+  justify-content: center;
+}
+
+#separador{
+  width: 410px;
+  margin-left: -300px;
+}
+.paginate_button{
+  z-index: 0;
+}
+
+#pills-tab{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#dt_paginate{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  </style>
+</head>
+<body style="background-color: rgb(54, 55, 56)">
+
+<header>
+  <div class="logo"><a href="/NiltonMaster/">Nilton Master</a></div>
+    <nav>
+      <ul>
+        <li><a href="/NiltonMaster/" class="active">Inicio</a></li>
+        <li><a href="hosting/index.html">Elige los mejores Hosting</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+</header>
+
+
+<br>
+<br>
+<br>
+
+    
+<h4 style="color: cornsilk;">Anuncios:</h4>
+<hr  color="#fff" size=2 id="separador">
+<center>
+<div class="card mb-3" style="max-width: 400px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="https://www.hostinger.com/assets/images/affiliate-assets/screenshots-image-5ca13d16a6.jpg"  class="card-img " alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <img src="https://media.go2app.org/user_content/brand/logos/hostinger/logo_1529931812.png" class="card-img img-fluid" alt="...">
+        <p class="card-text">Alojamiento Web + Dominio Gratis 90% DE DESCUENTO</p>
+        <center><a href="https://www.hostg.xyz/SH4uI" target="_blank" class="btn btn-outline-light" style="background-color: blueviolet;">Pedir ahora</a></center>
+      </div>
+    </div>
+  </div>
+</div>
+</center>
+
+<hr color="#fff" size=2>
+
+<div class="col-12 ">
+  <br>
+        
+        <center>
+          <table id="dt" class="table w-100">
+            <thead>
+              <tr>
+                <th>Biemvenidos a Nilton Master</th>
+              </tr>
+            </thead>
+          </table>
+        </center>
+      </div>
+    </div>
+  </div> <!-- end container -->
+
+ <div>
+    <script type="text/javascript">
+function OrdenarPorIdDescendente(x,y) {
+	return x.id + y.id;
+}
+		
+		$(document).ready(function() {
+			    $("#dt thead").hide();
+        var dt = $('#dt').DataTable({
+               ajax: "generate_user.json",
+              bInfo: false,
+         pageLength: 8,
+       lengthChange: false,
+        deferRender: true,
+         processing: true,
+         language: {  
+          search: "Buscar aqui:",
+          zeroRecords: "Lo sentimos no hemos encontrado lo que buscaba en Nilton Master",
+          loadingRecords: "Cargando contenido de Nilton Master...",
+          processing: "Procesando contenido de Nilton Master...",
+              paginate: {
+                  previous: "Anterior",
+                  next: "Siguiente"
+              },
+            },
+            columns: [
+                {
+                    render: function (data, type, row, meta) { 
+                      var html =
+                      '<div class="card">'+
+  '<h5 class="card-header">'+row.phone+'</h5>'+
+  '<div class="card-body">'+
+  '<div class="embed-responsive embed-responsive-16by9">'+
+    '  <iframe src="https://www.youtube.com/embed/'+row.avatar+'" class="card-img-top embed-responsive-item" frameborder="0" allow="autoplay" allowfullscreen>'+'</iframe>'+
+    '</div>'+
+    '<ul class="nav nav-pills mb-3 nav nav-tabs" id="pills-tab" role="tablist">'+
+      '<li class="nav-item" role="presentation">'+
+        '<a class="btn btn-outline-success" href="'+row.code+'" role="tab" target="_blank" style="width: 210px;">'+'Ver codigo y descargar.'+'<img src="icon/github.png" width="15%" alt="" srcset="">'+'</a>'+
+      '</li>'+
+    '</ul>'+
+  '</div>'+
+'</div>';
+                      return  html;
+                    }
+                },
+                {
+                  data :"name", visible: false
+                }
+            ]
+        });
+
+       dt.on('draw', function(data){
+        $('#dt tbody').addClass('row');
+        $('#dt tbody tr').addClass('col-lg-6 ');
+       });
+		});
+  </script>
+ </div>
+
+
+<hr color="#fff" size=2>
+
+<div style="background-color: rgb(54, 55, 56)">
+  <h5 style="color: cornsilk;">Anuncios:</h5>
+  <hr  color="#fff" size=2 id="separador">
+
+<!-- 
+  <div class="row" id="ads">
+  <div class="card" style="width: 12rem;">
+    <img src="https://febatigr.com/content/bWM3V5b7yVFB0EL/img/girl-1.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Pierde peso, con este maravilloso producto.100% natural</h5>
+      <center><a href="https://uh6ae8507euh.axdsz.pro/?target=-7EBNQCgQAAAfFNwEDqksABQEBEREKEQkKEQ1CEQ0SAAF_YWRjb21ibwEx&al=53449&ap=-1" class="btn btn-outline-success" target="_blank">Pedir ahora</a></center>
+    </div>
+  </div>
+  
+  <div class="card" style="width: 12rem;">
+    <img src="https://febatigr.com/content/aw7Jpql7TFrekkN/img/product.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">El balsamo para las articulaciones.</h5>
+      <center><a href="https://uh6ae8507euh.axdsz.pro/?target=-7EBNQCgQAAAfFNwEDfCMABQEBEREKEQkKEQ1CEQ0SAAF_YWRjb21ibwEx&al=54190&ap=-1" class="btn btn-outline-success" target="_blank">Pedir ahora</a></center>
+    </div>
+  </div>
+
+
+  <div class="card" style="width: 12rem;">
+    <img src="https://febatigr.com/content/WuC1cwOfCZZlfaR/img/prod.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">pierde peso 7 kilos por mes.100% natural</h5>
+      <center><a href="https://uh6ae8507euh.axdsz.pro/?target=-7EBNQCgQAAAfFNwEDqksABQEBEREKEQkKEQ1CEQ0SAAF_YWRjb21ibwEx&al=59307&ap=-1" class="btn btn-outline-success" target="_blank">Pedir ahora</a></center>
+    </div>
+  </div>
+
+ -->
+  
+
+
+
+</div>
+</div>
+
+
+<div class="social-bar">
+  <a href="#" class="icon icon-facebook2" target="_blank"></a>
+  <a href="https://youtube.com/channel/UCizjBcW3kv_6XYTLu3ig3pw" class="icon icon-youtube" target="_blank"></a>
+  <a href="#" class="icon icon-instagram" target="_blank"></a>
+</div>
+            
+
+
+
+
+
+<hr color="#fff" size=2>
+<center><h6 style="color: cornsilk;">Copyright © Nilton Master - Todos los derechos reservados</h6></center>
+
+
+<script src="hosting/js/app.js"></script>
+<img src="https://www.hostg.xyz/aff_i?offer_id=265&aff_id=55457" width="0" height="0" style="position:absolute;visibility:hidden;" border="0" />
+
+</body>
+</html>
