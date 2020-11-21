@@ -1,0 +1,80 @@
+{
+    "draw":0,
+    "recordsTotal":20,
+    "recordsFiltered":20,
+    "data":[
+        {
+            "id":1,
+            "name":"986",
+            "phone":"como poner color de fondo en HTML (visual estudio code)",
+            "avatar":"fjG7pGQAg8U",
+            "code":"#"
+            },
+        {
+            "id":2,
+            "name":"987",
+            "phone":"como poner o insertar imagen del web en HTML  (visual studio code)",
+            "avatar":"V8H_RHE6jIg",
+            "code":"#"
+            },
+        {
+            "id":3,
+            "name":"988",
+            "phone":"como insertar o poner una IMAGEN desde PC en HTML(visual studio code)",
+            "avatar":"4T95Yh6iZFo",
+            "code":"#"
+            },
+        {
+            "id":4,
+            "name":"989",
+            "phone":"como cambiar el tamaño de una imagen en html  ancho y alto (visual studio code)",
+            "avatar":"Npnyqs7Sodo",
+            "code":"#"
+            },
+        {
+            "id":5,
+            "name":"990",
+            "phone":"como poner una imagen de fondo html , cambiar el tipo de letra y cambiar el color de letra en html",
+            "avatar":"XopK7kpaFUc",
+            "code":"#"
+            },
+            {
+                "id":6,
+                "name":"992",
+                "phone":"como poner un video en html desde  pc y web youtuve(visual studio code)",
+                "avatar":"Pc5iTH7Q8Cs",
+                "code":"#"
+                },
+                {
+                    "id":7,
+                    "name":"993",
+                    "phone":"01   crear pagina web html  Blog de videos  con HTML y  CSS(como poner icono en  ventana)",
+                    "avatar":"mebDook7EE8",
+                    "code":"#"
+                    },
+                    {
+                        "id":8,
+                        "name":"994",
+                        "phone":"02.  como crear pagina web Blog de videos con HTML y CSS(color de fondo y cabecera )",
+                        "avatar":"yMOAeaqw028",
+                        "code":"#"
+                        }, 
+                        {
+                            "id":9,
+                            "name":"995",
+                            "phone":"Ventana modal(Ventana emergente) bootstrap",
+                            "avatar":"CDp8dmp-fpk",
+                            "code":"#"
+                            },  
+                            {
+                                "id":10,
+                                "name":"996",
+                                "phone":"Como poner video de forma responsivo 📱 📱  | Adaptable a dispositivos móviles 📱 📱 🧑‍💻",
+                                "avatar":"opEPuu6u2Sk",
+                                "code":"#"
+                                }                                                                                         
+    ]
+}
+
+
+

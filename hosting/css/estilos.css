@@ -1,0 +1,79 @@
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 20px 16px 10px 16px;
+	background-color: #a86b0f;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+	z-index: 1;
+}
+header .logo a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 26px;
+	float: left;
+	font-weight: 300;
+	font-weight: bold;
+}
+header nav{
+	float: right;
+}
+header nav ul{
+	display: flex;
+	margin: 0;
+}
+header nav ul li a{
+	padding: 8px 20px;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+}
+header nav ul li a:hover{
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 0.1875rem;
+	color: #fff;
+}
+.menu-toggle{
+	cursor: pointer;
+	float: right;
+	display: none;
+}
+.bar1, .bar2, .bar3 {
+	width: 30px;
+	height: 3px;
+	background-color: #fff;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+.change .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-5px, 6px);
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+.change .bar2 {opacity: 0;}
+.change .bar3 {
+	-webkit-transform: rotate(45deg) translate(-7px, -8px);
+	transform: rotate(45deg) translate(-7px, -8px);
+}
+
+.header-hero{
+	background-image: url(../img/hero.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+}
+
+.contenido-pagina{
+	margin-top: 80px;
+}
+.contenido-pagina h1{
+	font-weight: 600;
+	text-align: center;
+}
+.contenido-pagina p{
+	padding: 0 60px;
+	text-align: justify;
+}
